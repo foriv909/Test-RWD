@@ -1,3 +1,75 @@
 *{
     font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
   }
+
+  /**body**/
+  
+.bodyContainer{
+    max-width:1349px;
+    margin:0 auto;
+}
+
+/**header**/
+.header{
+  margin:0 20px;
+  text-align:center;
+  border-bottom:1px solid #f2f3f7
+}
+.headerLogo{
+  display:inline-block;
+  padding:10px 160px 10px 0px;
+  border-right:1px solid #f2f3f7;
+}
+.logoPicture{
+  width:53%;
+}
+.headerNav{
+  display:inline-block;
+}
+.headerNavGroup{
+  display:-webkit-inline-box;
+}
+.headerNavItem{
+  text-align:center;
+  padding:13px 40px;
+  border-right:1px solid #f2f3f7;
+  border-bottom:1px solid #f2f3f7
+}
+.itemText{
+  font-size:18px;
+}
+.itemOne{
+  color:#FFAB00;
+  font-weight:bold;
+}
+.itemTwo{
+  color:#F48FB1;
+  font-weight:bold;
+}
+.itemThree{
+  color:#80DEEA;
+  font-weight:bold;
+}
+.itemFour{
+  color:#B39DDB;
+  font-weight:bold;
+}
+.itemTest{
+  color:#F8BBD0;
+  font-weight:bold;
+}
+.itemHomeText{
+  font-size:15px;
+  color:#757575;
+}
+
+
+/**main**/
+.mainPhoto{
+  height:280px;
+  width:50%;
+}
+
+
+
