@@ -1,5 +1,5 @@
 *{
-    font-family: 'Oswald', sans-serif;
+    font-family:Microsoft JhengHei;
     box-sizing: border-box;
   }
 
@@ -66,10 +66,148 @@
 
 
 /**main**/
-.mainPhoto{
-  height:280px;
-  width:50%;
+.lineIcon{
+  display:inline-block;
+  position:fixed;
+  top:13%;
+  right:16%;
+  color:#64DD17;
+  font-size:45px;
+}
+.main{
+  position:relative;
+}
+.centerLogo{
+  display:inline-block;
+  position:absolute;
+  left:38%;
+  top:20%;
+  z-index:2;
+}
+.centerphoto{
+  width:320px;
+  height:320px;
+}
+.centerContainer{
+  z-index:3;
+  display:inline-block;
+  position:absolute;
+  top:36%;
+  left:20.5%;
+  text-align:center;
+  font-family:Microsoft JhengHei;
+}
+.centerTitle{
+  color:#BDBDBD;
+  font-size:20px;
+  font-weight:900;
+  margin-bottom:20px;
+  letter-spacing:2px;
+}
+.centerText{
+  font-size:23px;
+  font-weight:900;
+  margin-bottom:40px;
+}
+.centerTextPartOne{
+  font-size:1px;
+}
+.icon{
+  font-size:35px;
+}
+.mainFirst{
+  background:url(../images/1.jpg) no-repeat;
+  height:30vh;
+  width:35vw;
+  background-size:cover;
+  background-position:center;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  margin-right:-4px;
+}
+.mainTextOneTitle{
+  background-color:#FBC02D;
+}
+.mainSecond{
+  background:url(../images/2.jpg) no-repeat;
+  height:30vh;
+  width:35vw;
+  background-size:cover;
+  background-position:center;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+}
+.mainTextSecondTitle{
+  background-color:#EF9A9A;
+}
+.mainThird{
+  background:url(../images/3.jpg) no-repeat;
+  height:30vh;
+  width:35vw;
+  background-size:cover;
+  background-position:center;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  margin-right:-4px;
+}
+.mainTextThirdTitle{
+  background-color:#90CAF9;
+}
+.mainFourth{
+  background:url(../images/4.jpg) no-repeat;
+  height:30vh;
+  width:35vw;
+  background-size:cover;
+  background-position:center;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+}
+.mainTextFourthTitle{
+  background-color:#D1C4E9;
 }
 
 
+.mainFirstContainer,.mainSecondContainer,.mainThirdContainer,.mainFourthContainer{
+  text-align:center;
+}
+.mainTextStyle{
+  display:inline-block;
+  font-size:18px;
+  font-weight:900;
+  color:#f2f3f7;
+  text-align:center;
+  font-family:'Noto Sans TC', sans-serif;
+  padding:10px 20px;
+  margin-bottom:15px;
+  border-radius:50px;
+  font-family:Microsoft JhengHei;
+}
+.mainTextContent{
+  font-size:25px;
+  font-weight:900;
+  color:#f2f3f7;
+  font-family:Microsoft JhengHei;
+}
+
+.footer{
+  width:95%;
+  margin:20px auto;
+}
+.footerTitle{
+  color:#757575;
+  font-size:20px;
+  font-weight:700;
+  margin-bottom:5px;
+}
+.footerText{
+  font-size:15px;
+  color:#757575;
+}
+.footerTextColor{
+  color:#E53935;
+}
 
