@@ -6,8 +6,8 @@
   /**body**/
   
 .bodyContainer{
-    max-width:1349px;
-    margin:0 auto;
+  max-width:1349px;
+  margin:0 auto;
 }
 
 /**header**/
@@ -209,5 +209,15 @@
 }
 .footerTextColor{
   color:#E53935;
+}
+
+/**iphone**/
+@media (max-width:321px){
+  .bodyContainer{
+    width:321px;
+  }
+  .mainFirst,.mainSecond,.mainThird,.mainFourth{
+    width:100vw;
+  }
 }
 
