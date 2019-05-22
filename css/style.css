@@ -28,9 +28,10 @@
   display:inline-block;
 }
 .headerNavGroup{
-  display:-webkit-inline-box;
+  display:inline-block;
 }
 .headerNavItem{
+  display:inline-block;
   text-align:center;
   padding:13px 40px;
   border-right:1px solid #f2f3f7;
@@ -63,12 +64,18 @@
   font-size:15px;
   color:#757575;
 }
+#menu-button{
+  display:none;
+}
 
 
 /**main**/
+.RWDcenterLogo{
+  display:none;
+}
 .lineIcon{
   display:inline-block;
-  position:fixed;
+  position:absolute;
   top:13%;
   right:16%;
   color:#64DD17;
@@ -79,9 +86,9 @@
 }
 .centerLogo{
   display:inline-block;
-  position:absolute;
-  left:38%;
-  top:20%;
+  position:fixed;
+  left:41.3%;
+  top:18%;
   z-index:2;
 }
 .centerphoto{
@@ -115,13 +122,19 @@
 .icon{
   font-size:35px;
 }
+.lineIcon{
+  position:fixed;
+  top:12%;
+  left:95%;
+
+}
 .mainFirst{
   background:url(../images/1.jpg) no-repeat;
   height:30vh;
-  width:35vw;
+  width:50%;
   background-size:cover;
   background-position:center;
-  display:inline-flex;
+  float:left;
   align-items:center;
   justify-content:center;
   margin-right:-4px;
@@ -132,10 +145,10 @@
 .mainSecond{
   background:url(../images/2.jpg) no-repeat;
   height:30vh;
-  width:35vw;
+  width:50%;
   background-size:cover;
   background-position:center;
-  display:inline-flex;
+  float:left;
   align-items:center;
   justify-content:center;
 }
@@ -145,10 +158,10 @@
 .mainThird{
   background:url(../images/3.jpg) no-repeat;
   height:30vh;
-  width:35vw;
+  width:50%;
   background-size:cover;
   background-position:center;
-  display:inline-flex;
+  float:left;
   align-items:center;
   justify-content:center;
   margin-right:-4px;
@@ -159,10 +172,10 @@
 .mainFourth{
   background:url(../images/4.jpg) no-repeat;
   height:30vh;
-  width:35vw;
+  width:50%;;
   background-size:cover;
   background-position:center;
-  display:inline-flex;
+  float:left;
   align-items:center;
   justify-content:center;
 }
@@ -173,6 +186,8 @@
 
 .mainFirstContainer,.mainSecondContainer,.mainThirdContainer,.mainFourthContainer{
   text-align:center;
+  position:relative;
+  top:37%;
 }
 .mainTextStyle{
   display:inline-block;
@@ -194,14 +209,16 @@
 }
 
 .footer{
-  width:95%;
-  margin:20px auto;
+  width:90%;
+  margin:0 auto;
+  padding:5px 50px;
 }
 .footerTitle{
   color:#757575;
   font-size:20px;
   font-weight:700;
   margin-bottom:5px;
+  padding-top:30px;
 }
 .footerText{
   font-size:15px;
@@ -212,12 +229,193 @@
 }
 
 /**iphone**/
-@media (max-width:321px){
-  .bodyContainer{
-    width:321px;
+@media (max-width:1025px){
+  .lineIcon{
+    display:inline-block;
+    position:fixed;
+    top:20%;
+    right:3%;
+    color:#64DD17;
+    font-size:45px;
   }
-  .mainFirst,.mainSecond,.mainThird,.mainFourth{
-    width:100vw;
+  .headerNavItem {
+    padding:5px 20px;
+  }
+  .centerLogo{
+    display:inline-block;
+    position:fixed;
+    left:33.9%;
+    top:18%;
+    z-index:2;
+  }
+}
+@media (max-width:521px){
+  .RWDcenterLogo{
+    display:inline-block;
+    background-color:#FFE082;
+    height:20vh;
+    width:100%;
+    z-index:0 ;
+  }
+  .RWDcenterLogoContent{
+    position:absolute;
+    top:-20%;
+    left:-3%;
+    height:500px;
+    width:500px;
+    z-index:1; 
+  }
+  .centerContainer{
+    position:absolute;
+    top:43%;
+    left:32%;
+  }
+  .centerTitle{
+    font-size:20px;
+  }
+  .centerText{
+    font-size:20px;
+    margin-bottom:10px;
+  }
+  .centerTextPartOne{
+    font-size:10px;
+  }
+  .icon{
+    font-size:40px;
+  }
+  .lineIcon{
+    font-size:60px;
+    position:fixed;
+    top:29%;
+    left:85%;
+    z-index:4;
+  }
+  .centerLogo{
+    display:none;
+  }
+  .header{
+    text-align:left;
+  }
+  .headerLogo{
+    display:inline-block;
+    padding:10px 0px 10px 0px;
+    border-right:0px solid #f2f3f7;
+  }
+  .headerNav{
+    display:none;
+  }
+  .RWDheaderNav{
+    display:inline-block;
+  }
+  .headerNavGroup{
+    display:inline-block;
+  }
+  .headerNavItem{
+    display:block;
+    text-align:left;
+    padding:20px 20px;
+    border-right:0px solid #f2f3f7;
+    border-bottom:1px solid #f2f3f7
+  }
+  .itemSize{
+    font-size:35px;
+    margin-right:33px;
+  }
+  .itemTest{
+    font-size:21px;
+    margin-right:28px;
+  }
+  .itemText{
+    font-size:25px;
+  }
+  .tag{
+    font-size:25px;
+    margin-left:230px;
+  }
+  .menuContainer{
+    display:inline-block;
+    position:absolute;
+    top:1.5%;
+    left:87%;
+  }
+  
+  #menu-button{
+    display:inline-block;
+    width:35px;
+    height:33px;
+    position:relative;
+    z-index:5;
+  }
+  .menuButton{
+    text-decoration:none;
+  }
+  .menuButton:hover{
+    background-color:white;
+  }
+  .mainFirst{
+    background:url(../images/1.jpg) no-repeat;
+    height:19vh;
+    width:100%;
+    background-size:cover;
+    background-position:center;
+    float:left;
+    align-items:center;
+    justify-content:center;
+    margin-right:-4px;
+    position:relative;
+    z-index:2;
+  }
+  .mainSecond{
+    background:url(../images/2.jpg) no-repeat;
+    height:19vh;
+    width:100%;
+    background-size:cover;
+    background-position:center;
+    float:left;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    z-index:2;
+  }
+  .mainTextSecondTitle{
+    background-color:#EF9A9A;
+  }
+  .mainThird{
+    background:url(../images/3.jpg) no-repeat;
+    height:19vh;
+    width:100%;
+    background-size:cover;
+    background-position:center;
+    float:left;
+    align-items:center;
+    justify-content:center;
+    margin-right:-4px;
+    z-index:2;
+  }
+  .mainTextThirdTitle{
+    background-color:#90CAF9;
+  }
+  .mainFourth{
+    background:url(../images/4.jpg) no-repeat;
+    height:19vh;
+    width:100%;
+    background-size:cover;
+    background-position:center;
+    float:left;
+    align-items:center;
+    justify-content:center;
+    z-index:2;
+  }
+  .footer{
+    clear:both;
+    width:100%;
+    padding:20px 20px;
+  }
+  .footerTitle{
+    font-size:25px;
+  }
+  .footerText{
+    font-size:10px;
   }
 }
 
