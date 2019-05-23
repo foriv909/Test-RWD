@@ -82,6 +82,8 @@
   font-size:45px;
 }
 .main{
+  max-width:1349px;
+  margin:0 auto;
   position:relative;
 }
 .centerLogo{
@@ -125,7 +127,7 @@
 .lineIcon{
   position:fixed;
   top:12%;
-  left:95%;
+  left:82%;
 
 }
 .mainFirst{
@@ -182,6 +184,9 @@
 .mainTextFourthTitle{
   background-color:#D1C4E9;
 }
+.clear{
+  clear:both;
+}
 
 
 .mainFirstContainer,.mainSecondContainer,.mainThirdContainer,.mainFourthContainer{
@@ -209,16 +214,15 @@
 }
 
 .footer{
-  width:90%;
+  max-width:1349px;
   margin:0 auto;
-  padding:5px 50px;
+  padding:20px 50px;
 }
 .footerTitle{
   color:#757575;
   font-size:20px;
   font-weight:700;
   margin-bottom:5px;
-  padding-top:30px;
 }
 .footerText{
   font-size:15px;
@@ -249,45 +253,46 @@
     z-index:2;
   }
 }
+/*****************************************************/
 @media (max-width:521px){
   .RWDcenterLogo{
     display:inline-block;
     background-color:#FFE082;
-    height:20vh;
+    height:30vh;
     width:100%;
     z-index:0 ;
   }
   .RWDcenterLogoContent{
     position:absolute;
-    top:-20%;
-    left:-3%;
-    height:500px;
-    width:500px;
+    top:-3%;
+    left:-12%;
+    height:590px;
+    width:590px;
     z-index:1; 
   }
   .centerContainer{
     position:absolute;
-    top:43%;
-    left:32%;
+    top:10%;
+    left:22%;
   }
   .centerTitle{
-    font-size:20px;
+    font-size:28px;
   }
   .centerText{
-    font-size:20px;
+    font-size:32px;
     margin-bottom:10px;
   }
   .centerTextPartOne{
-    font-size:10px;
+    font-size:15px;
   }
   .icon{
-    font-size:40px;
+    font-size:60px;
   }
   .lineIcon{
-    font-size:60px;
+    font-size:48px;
     position:fixed;
-    top:29%;
-    left:85%;
+    top:47%;
+    left:89%;
     z-index:4;
   }
   .centerLogo{
@@ -354,7 +359,7 @@
   }
   .mainFirst{
     background:url(../images/1.jpg) no-repeat;
-    height:19vh;
+    height:27vh;
     width:100%;
     background-size:cover;
     background-position:center;
@@ -367,7 +372,7 @@
   }
   .mainSecond{
     background:url(../images/2.jpg) no-repeat;
-    height:19vh;
+    height:27vh;
     width:100%;
     background-size:cover;
     background-position:center;
@@ -382,7 +387,7 @@
   }
   .mainThird{
     background:url(../images/3.jpg) no-repeat;
-    height:19vh;
+    height:27vh;
     width:100%;
     background-size:cover;
     background-position:center;
@@ -397,7 +402,7 @@
   }
   .mainFourth{
     background:url(../images/4.jpg) no-repeat;
-    height:19vh;
+    height:27vh;
     width:100%;
     background-size:cover;
     background-position:center;
